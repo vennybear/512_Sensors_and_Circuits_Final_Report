@@ -2,8 +2,8 @@
 
 **Cosmic Tilt** is a handheld electronic reflex game inspired by 90s classics like *Bop It* and *Brain Warp*. Built using **CircuitPython** on the **Seeed Xiao ESP32C3**, the game challenges players to respond to rapid-fire commands using motion (tilting) and tactile inputs (twisting) under increasingly difficult time constraints.
 
-![Final Product](images/final_product.jpg)
-*(Note: Please replace `Images/final_product.jpg` with the actual path to your photo)*
+![Final Product](Images/final_product.jpg)
+
 
 ## 🎮 Project Overview
 
@@ -33,7 +33,6 @@
 This project utilizes a modular design on a perfboard. All components are connected via **female headers**, ensuring that the microcontroller and sensors can be easily removed or replaced.
 
 ![Internal Wiring](Images/wiring_inside.jpg)
-*(Note: Please replace with your internal wiring photo)*
 
 ### Component List
 *   **Microcontroller:** Seeed Xiao ESP32C3
