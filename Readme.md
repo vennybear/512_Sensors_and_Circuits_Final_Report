@@ -32,7 +32,8 @@
 
 This project utilizes a modular design on a perfboard. All components are connected via **female headers**, ensuring that the microcontroller and sensors can be easily removed or replaced.
 
-![Internal Wiring](Images/wiring_inside.jpg)
+![Internal Wiring1](Images/wiring_inside1.jpg)
+![Internal Wiring2](Images/wiring_inside2.jpg)
 
 ### Component List
 *   **Microcontroller:** Seeed Xiao ESP32C3
@@ -48,7 +49,6 @@ The circuit includes a power management circuit where the battery is connected v
 *   [View System Block Diagram](Documentation/System_Block_Diagram.png)
 *   [View Circuit Diagram](Documentation/Circuit_Diagram.pdf)
 
-*(Make sure you upload these diagrams to a folder named 'Documentation' in your repo)*
 
 ## 📦 Enclosure Design
 
