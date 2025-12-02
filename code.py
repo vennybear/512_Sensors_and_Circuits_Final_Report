@@ -10,7 +10,6 @@ from adafruit_display_text import label
 import adafruit_displayio_ssd1306
 import adafruit_adxl34x
 
-# 兼容性处理
 try:
     import i2cdisplaybus
 except ImportError:
@@ -121,7 +120,7 @@ def menu():
     global current_diff, last_pos_global
     set_color((0, 0, 255))
     
-    # 【修改】：标题大小改为 1 (原来是2)，选项大小保持 2 (醒目)
+   
     show_screen("COSMIC TILT", f"< {DIFFS[current_diff]} >", "PRESS TO START", 1, 2, 1)
     
     enc_acc = 0
@@ -194,12 +193,11 @@ def game():
 
 def fail(s):
     set_color((255, 0, 0))
-    # 【修改】：GAME OVER 改为大小 1
+  
     show_screen("GAME OVER", f"SCORE: {s}", "PRESS TO RESET", 1, 2, 1)
     wait_btn(True); wait_btn(False)
 
 def win(s):
-    # 【修改】：YOU WIN 改为大小 1
     show_screen("YOU WIN!", f"SCORE: {s}", "PRESS TO RESET", 1, 2, 1)
     while button.value:
         encoder.update()
@@ -216,4 +214,5 @@ if not accel:
 
 while True:
     menu()
+
     game()
